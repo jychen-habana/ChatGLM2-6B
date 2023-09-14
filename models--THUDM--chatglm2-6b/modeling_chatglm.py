@@ -1160,7 +1160,7 @@ class ChatGLMForConditionalGeneration(ChatGLMPreTrainedModel):
         #     with_stack=True)
         # prof.start()
         while True:
-            step_start = time.time()
+            # step_start = time.time()
             model_inputs = self.prepare_inputs_for_generation(input_ids, **model_kwargs)
             # forward pass to get next token
             outputs = self(
